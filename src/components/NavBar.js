@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 
-const NavBar = ({
-
-}) => {
+const NavBar = () => {
   return (
     <nav>
       <div className="p-3 flex justify-end text-xl">
