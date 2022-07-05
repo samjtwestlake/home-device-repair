@@ -10,7 +10,7 @@ import Pricing from './routes/Pricing';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="/home-device-repair">
       <Routes>
         <Route path="/" element={<App />}>
           <Route path="services" element={<Services />} />
