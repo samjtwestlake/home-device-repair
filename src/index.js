@@ -6,11 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Services from './routes/Services';
 import Pricing from './routes/Pricing';
+import NavBar from './components/NavBar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <NavBar />
       <Routes>
         <Route path="/" element={<App />}>
           <Route path="services" element={<Services />} />

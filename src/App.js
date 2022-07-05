@@ -6,7 +6,6 @@ import { Outlet } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <NavBar/>
       <img src={logo} className="App-logo" alt="logo" />
       <p>
         Deployment working! :)
