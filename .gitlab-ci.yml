@@ -11,7 +11,8 @@ pages:
     - yarn
     - yarn build
     - yarn export
-    - mv out public
+    - rm -rf public/*
+    - mv out/* public
   artifacts:
     paths:
       - public
