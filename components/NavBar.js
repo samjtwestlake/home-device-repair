@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <nav>
       <div className="p-3 flex justify-end text-xl">
-        <ul className="flex gap-4">
+        <ul className="flex gap-4 mb-0">
           <li>
             <Link href="/services" className="hover:text-blue-400">
               Services
