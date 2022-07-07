@@ -1,7 +1,7 @@
 image: node
 
 pages:
-  stage: deploy
+  stage: build
   script:
     - yarn
     - yarn build
@@ -16,4 +16,3 @@ pages:
       - node_modules
   only:
     - main
-    - .next/cache
