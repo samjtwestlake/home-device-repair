@@ -1,20 +1,15 @@
-image: node
-
-before_script:
-  - npm install
-
+stages:
+  - deploy
 cache:
-  key: ${CI_COMMIT_REF_SLUG}
   paths:
     - node_modules/
-    - .next/cache/
-
-pages:
+deploy:
+  image: docker:dind
+  stage: deploy
   script:
-    - npm run-script build && npm run-script export
-    - mv out public
-  artifacts:
-    paths:
-      - public
+    - docker build -t app/blog .
+    - docker run -d -p 3000:3000 --rm --name next-blog app/blog
+  tags:
+    - docker
   only:
     - master
