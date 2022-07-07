@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const NavBar = () => {
   return (
@@ -6,22 +6,22 @@ const NavBar = () => {
       <div className="p-3 flex justify-end text-xl">
         <ul className="flex gap-4">
           <li>
-            <Link to="/services" className="hover:text-blue-400">
+            <Link href="/services" className="hover:text-blue-400">
               Services
             </Link>
           </li>
           <li>
-            <Link to="/pricing" className="hover:text-blue-400">
+            <Link href="/pricing" className="hover:text-blue-400">
               Pricing
             </Link>
           </li>
           <li>
-            <Link to="/book" className="hover:text-blue-400">
+            <Link href="/book" className="hover:text-blue-400">
               Book
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="hover:text-blue-400">
+            <Link href="/contact" className="hover:text-blue-400">
               Contact
             </Link>
           </li>
