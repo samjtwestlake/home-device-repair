@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import 'antd/dist/antd.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Services from './routes/Services';
-import Pricing from './routes/Pricing';
+import Pricing from './components/routes/Pricing';
+import Book from './components/routes/Book';
+import Services from './components/routes/Services';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +17,7 @@ root.render(
         <Route path="/" element={<App />}>
           <Route path="services" element={<Services />} />
           <Route path="pricing" element={<Pricing />} />
+          <Route path="book" element={<Book />} />
         </Route>
       </Routes>
     </BrowserRouter>

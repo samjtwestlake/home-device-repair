@@ -16,6 +16,11 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
+            <Link to="/book" className="hover:text-blue-400">
+              Book
+            </Link>
+          </li>
+          <li>
             <Link to="/contact" className="hover:text-blue-400">
               Contact
             </Link>
