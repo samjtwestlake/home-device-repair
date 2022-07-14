@@ -8,7 +8,7 @@ const Responsive = ({
 }) => {
   const [dims, setDims] = useState(null);
 
-  function handleResize() {
+  const handleResize = () => {
     const newDims = getWindowDimensions()
     console.log({newDims})
     setDims(newDims);
