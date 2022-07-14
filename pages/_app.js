@@ -9,9 +9,10 @@ function MyApp({ Component, pageProps }) {
     <>
       {/* <Responsive display={['Laptop', 'Tablet']}> */}
         <NavBar />
+        <BurgerMenu />
       {/* </Responsive> */}
       {/* <Responsive display={['Mobile']}>
-        <BurgerMenu />
+        
       </Responsive> */}
       <Component {...pageProps} />
     </>
