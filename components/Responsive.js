@@ -10,11 +10,14 @@ const Responsive = ({
 
   function handleResize() {
     const newDims = getWindowDimensions()
+    console.log({newDims})
     setDims(newDims);
   }
 
   useEffect(() => {
-    setDims(getWindowDimensions());
+    const newDims = getWindowDimensions();
+    console.log({newDims})
+    setDims(newDims);
     window.addEventListener('resize', handleResize, false);
     return () => {
       window.removeEventListener('resize', handleResize, false);
