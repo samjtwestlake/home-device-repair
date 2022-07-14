@@ -7,9 +7,9 @@ import BurgerMenu from '../components/BurgerMenu';
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      {/* <Responsive display={['Laptop', 'Tablet']}> */}
+      <Responsive display={['Laptop', 'Tablet']}>
         <NavBar />
-      {/* </Responsive> */}
+      </Responsive>
       {/* <Responsive display={['Mobile']}>
         <BurgerMenu />
       </Responsive> */}
