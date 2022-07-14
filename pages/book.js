@@ -3,7 +3,7 @@ import { Calendar, Col, Row, Card } from "antd";
 const Book = () => {
   return (
     <>
-      <div>repair</div>
+      <div>book</div>
       <Row>
         <Col span={22} offset={1}>
           <Calendar />
