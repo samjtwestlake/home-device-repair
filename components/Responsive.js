@@ -62,9 +62,12 @@ const Responsive = ({
     )
   }
 
+  const rendering = shouldRender();
+  console.log({rendering})
+
   return (
     <React.Fragment>
-      {shouldRender() ? children : null}
+      {rendering ? children : null}
     </React.Fragment>
   )
 }
